@@ -15,9 +15,9 @@ export default function Recipe({ title, ingredients, instructions, addToFavorite
     
     return (
       <div className="bg-slate-100 p-8 flex flex-col items-center rounded-md">
-        <h2>{title}</h2>
-        <p>{ingredients}</p>
-        <p>{instructions}</p>
+        <h1 className="p-2 font-bold">{title}</h1>
+        <p className="p-2">{ingredients}</p>
+        <p className="p-2">{instructions}</p>
 
         <button onClick={toggleFavorite} class="bg-blue-300 p-2 rounded-md">
             {isFavorite ? "Remove from Favorites" : "Add to Favorites!"}
