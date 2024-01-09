@@ -3,3 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.h-112 {
+  height: 28rem;
+}
