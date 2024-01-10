@@ -22,6 +22,7 @@
 import React, { useState } from 'react';
 import Button from './Button.jsx';
 import Hero from './Hero.jsx';
+import MainContent from './MainContent.jsx';
 import Nav from './Nav.jsx';
 import Toast from './Toast.jsx';
 import '/Users/ethangutierrez/Desktop/Current Projects/DiscoverDishes/vite-project/src/styling/app.css';
@@ -47,9 +48,7 @@ export default function App() {
     <div className="font-sans h-full">
       <Nav />
       <Hero />
-      <div className="h-1/2 flex justify-end items-end">
-        <Button onToast={showToast}/>
-      </div>
+      <Button onToast={showToast}/>
       {toast && <Toast onClose={closeToast} />}
     </div>
   );
