@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Recipe({ title, ingredients, instructions, addToFavorites, removeFromFavorites }) {
+export default function Recipe({ id, title, ingredients, instructions, addToFavorites, removeFromFavorites, addToast}) {
     const [isFavorite, setIsFavorite] = useState(false);
 
     const toggleFavorite = () => {
@@ -8,8 +8,10 @@ export default function Recipe({ title, ingredients, instructions, addToFavorite
 
         if (!isFavorite) {
             addToFavorites({ title, ingredients, instructions });
+            addToast();
         } else {
             removeFromFavorites({ title, ingredients, instructions });
+            addToast();
         }
     }
     

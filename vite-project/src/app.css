@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
 html, body, #root {
     height: 100%;
     margin: 0;
     padding: 0;
   }
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-food {
+  background-image: url('/src/food2.jpg');
+}
