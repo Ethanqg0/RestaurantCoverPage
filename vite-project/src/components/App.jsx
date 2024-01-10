@@ -20,10 +20,14 @@
 */
 
 import React, { useState } from 'react';
+import Hero from './Hero.jsx';
+import MainContent from './MainContent.jsx';
 import Nav from './Nav.jsx';
 import Recipe from './Recipe.jsx';
-import "./tailwind.css";
-import "./app.css";
+import '/Users/ethangutierrez/Desktop/Current Projects/DiscoverDishes/vite-project/src/styling/app.css';
+import '/Users/ethangutierrez/Desktop/Current Projects/DiscoverDishes/vite-project/src/styling/tailwind.css';
+import Toast from './Toast.jsx';
+
 
 export default function App() {
   const [favorites, setFavorites] = useState([]);
@@ -48,23 +52,7 @@ export default function App() {
   return (
     <div className="font-sans h-full">
       <Nav />
-
-      <div className="h-full flex flex-row items-center bg-cover bg-center bg-food">
-        <div className="w-2/3 flex flex-col items-center justify-center">
-          <div className="justify-start items-start ">
-            <h1 className="text-7xl font-sans font-bold pb-4 poppins">Thousands of</h1>
-            <h1 className="text-6xl font-sans font-bold pb-4">HealthDishes</h1>
-            <h1 className="text-xl font-sans text-gray-500">Discover Simple and Delicious Recipes to Elevate Your Culinary Adventure</h1>
-            <div className="mt-10 flex flex-row items-center">
-              <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-6 px-6 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-green-700"><h1>Discover Dishes</h1></button>
-              <h1 className="ml-4 text-green-700">5,000 users like you have enjoyed our product!</h1>
-            </div>
-          </div>
-        </div>
-        <div className="w-1/3 bg-slate-700">  
-
-        </div>
-      </div>
+      <Hero />
 
       <div className="flex flex-row items-center justify-around w-full h-full bg-slate-900">
         <div className="w-1/3 p-6">
@@ -110,22 +98,7 @@ export default function App() {
         </div>
       </div>
 
-      <div id="toast-success" class="p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800" role="alert">
-        <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-            <span class="sr-only">Check icon</span>
-        </div>
-        <div class="ms-3 text-sm font-normal">Item added successfully.</div>
-        <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-success" aria-label="Close">
-            <span class="sr-only">Close</span>
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-            </svg>
-        </button>
-      </div>
-
+      <Toast />
 
     </div>
   );

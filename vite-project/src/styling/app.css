@@ -11,5 +11,5 @@ html, body, #root {
 }
 
 .bg-food {
-  background-image: url('/src/food2.jpg');
+  background-image: url('/src/assets/food2.jpg');
 }
