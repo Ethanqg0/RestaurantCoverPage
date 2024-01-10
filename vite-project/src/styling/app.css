@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
 html, body, #root {
     height: 100%;
@@ -12,4 +13,8 @@ html, body, #root {
 
 .bg-food {
   background-image: url('/src/assets/food2.jpg');
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
 }
