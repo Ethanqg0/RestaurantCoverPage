@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 export default function Hero() {
     return (
     <div className="h-full w-full flex flex-row items-center bg-cover bg-center bg-food">
