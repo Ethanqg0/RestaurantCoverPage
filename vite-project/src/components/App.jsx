@@ -7,9 +7,9 @@ import '/Users/ethangutierrez/Desktop/Current Projects/DiscoverDishes/vite-proje
 
 export default function App() {
   return (
-    <div className="font-sans h-full w-full">
+    <>
       <Nav />
       <Hero />
-    </div>
+    </>
   );
 }
