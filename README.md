@@ -12,6 +12,8 @@ Mobile View:
 
 
 
+
+
 A lightweight and minimalist website template built using React and Tailwind CSS. This project focuses on simplicity, featuring a clean navigation bar and a striking hero section.
 
 Technologies Used:
