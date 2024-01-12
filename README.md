@@ -29,5 +29,7 @@ Installation:
 1. Clone the repository
 2. Install dependencies: npm install
 3. Start the development server: npm start
+
+---
    
 Feel free to customize and expand upon this foundation for your unique project needs. I love contributions and my LinkedIn inbox is open for collaboration!
