@@ -10,7 +10,7 @@ Mobile View:
 
 <img width="150" alt="Screenshot 2024-01-11 at 5 24 59 PM" src="https://github.com/Ethanqg0/RestaurantCoverPage/assets/106004563/214a7067-2f00-45d1-afa1-cf3dbe031929">
 
-
+---
 
 
 
